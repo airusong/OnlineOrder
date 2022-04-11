@@ -1,4 +1,5 @@
 package com.laioffer.onlineorder.controller;
+
 import com.laioffer.onlineorder.entity.Customer;
 import com.laioffer.onlineorder.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,10 +16,10 @@ public class SignUpController {
     @Autowired
     private CustomerService customerService;
 
-
-    @RequestMapping(value="/signup",method= RequestMethod.POST)
+    @RequestMapping(value = "/signup", method = RequestMethod.POST)
     @ResponseStatus(value = HttpStatus.CREATED)
-    public void signup(@RequestBody Customer customer){
-
+    public void signUp(@RequestBody Customer customer) {
+        customerService.signUp(customer);
     }
 }
+
