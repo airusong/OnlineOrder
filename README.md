@@ -1,5 +1,6 @@
 # OnlineOrder
 A Spring and Hibernate based online food ordering system.
+
 · Implemented Rest API via Spring MVC including registration, menu searching and ordering, checkout.
 
 · Utilized Hibernate to access and operate the data storage (menu, restaurants etc.)
